@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: blue">
+<h1>welcome to django templates</h1>
+<form method="post" action="read">
+    {% csrf_token %}cd
+<table>
+    <tr>
+        <th>Name:</th>
+        <td><input type="text" name="txtname"/></td>
+
+    </tr>
+    <tr>
+        <th>Age:</th>
+        <td><input type="number"  name="txtage"/></td>
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td><input type="email"  name="txtemail"/></td>
+    </tr>
+    <tr>
+        <th>Mobile:</th>
+        <td><input type="tel"  name="txtnumber"/></td>
+    </tr>
+    <tr>
+        <th>Place:</th>
+        <td><input type="text"  name="txtplace"/></td>
+    </tr>
+    <tr>
+       <td> <input type="submit" value="SUBMIT"/></td>
+    </tr>
+
+</table>
+
+</form>
+</body>
+</html>
